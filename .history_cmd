@@ -1,0 +1,120 @@
+    1  ls
+    2  ./autorun.sh 
+    3  ifconfig
+    4  ssh-keygen
+    5  cd
+    6  ll
+    7  cd .ssh
+    8  ll
+    9  cd 
+   10  cd .ansible/
+   11  ll
+   12  touch inventaire
+   13  vi inventaire
+   14  vi inventaire 
+   15  vim inventaire 
+   16  sudo apt install vim
+   17  vim inventaire 
+   18  cd
+   19  vi /etc/host
+   20  ifconfig
+   21  vi /etc/hosts
+   22  sudo vi /etc/hosts
+   23  ping serv1
+   24  ansible -i inventaire all -m ping 
+   25  cd 
+   26  cp .ansible/inventaire .
+   27  ansible -i inventaire all -m ping 
+   28  ansible -i inventaire serv1 -m ping 
+   29  ansible -i inventaire serv1 -m ping -v
+   30  vi inventaire 
+   31  ansible -i inventaire serv1 -m ping -v
+   32  telnet localhost 22
+   33  vi /etc/ssh/ssh_config
+   34  sudo vi /etc/ssh/ssh_config
+   35  sudo systemctl restart sshd
+   36  ll /etc/ssh/
+   37  exit
+   38  ifconfig
+   39  pwd
+   40  df
+   41  ls
+   42  mkdir jenkins
+   43  ls
+   44  pwd
+   45  curl -sO http://localhost:8080/jnlpJars/agent.jar
+   46  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   47  apt install curl
+   48  sudo apt install curl
+   49  curl
+   50  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   51  sudo apt install java
+   52  sudo apt install java*
+   53  sudo apt install default-jre
+   54  sudo apt-get update --fix-missing
+   55  dpkg -l | grep ubuntu-desktop
+   56  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   57  sudo apt install default-jre
+   58  ls
+   59  VBoxLinuxAdditions.run
+   60  ./VBoxLinuxAdditions.run
+   61  sudo ./VBoxLinuxAdditions.run
+   62  vi /etc/sudoers
+   63  sudo vi /etc/sudoers
+   64  sudo su
+   65  apt update
+   66  cd
+   67  cd ansible/
+   68  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   69  ansible-playbook -i inventory.yml -u alpha -K playbook1.yml 
+   70  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   71  sshpass
+   72  sudo apt install sshpass
+   73  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   74  cd 
+   75  hostname
+   76  hostname serv1
+   77  sudo hostname serv1
+   78  exit
+   79  cd Documents/ansible-alpha/
+   80  ls
+   81  cat play_apache.yml 
+   82  vi play_apache.yml 
+   83  git status
+   84  git add -A
+   85  git commit -m "adding apache, var and file tasks"
+   86  git status
+   87  git push origin
+   88  vi README.md 
+   89  git add -A
+   90  git commit -m "README run ansible commande"
+   91  git push remote origin
+   92  git push origin master
+   93  git push origin main
+   94  cat README.md 
+   95  ansible-playbook -i inventory.yml play_apache.yml 
+   96  vi /etc/hosts
+   97  sudo vi /etc/hosts
+   98  ansible-playbook -i inventory.yml -K play_apache.yml 
+   99  vi play_apache.yml 
+  100  ansible-playbook -i inventory.yml -K play_apache.yml 
+  101  vi play_apache.yml 
+  102  ansible-playbook -i inventory.yml -K play_apache.yml 
+  103  vi play_apache.yml 
+  104  echo "ansible-playbook -i inventory.yml -K play_apache.yml " >> README.md 
+  105  ansible-playbook -i inventory.yml -K play_apache.yml 
+  106  git add .
+  107  git status
+  108  vi play_apache.yml 
+  109  ansible-playbook -i inventory.yml -K play_apache.yml 
+  110  vi play_apache.yml 
+  111  ansible-playbook -i inventory.yml -K play_apache.yml 
+  112  ls
+  113  cat file1 
+  114  git status
+  115  git add .
+  116  git push origin main
+  117  git status
+  118  git commit -m "line in file module"
+  119  git push origin main
+  120  history > .history_cmd
