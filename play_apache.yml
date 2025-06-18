@@ -16,9 +16,9 @@
 
 - hosts: all
   connection: local
-  vars:
-    nom: KANTE
-    prenoms: ALPHA
+    #vars:
+    #nom: KANTE
+    #prenoms: ALPHA
 
   tasks:
     - name: print variable
