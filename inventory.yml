@@ -1,4 +1,6 @@
-ungrouped:
+all:
  hosts:
   serv1:
+    ansible_host: 192.168.1.115
   serv2:
+    ansible_host: 192.168.1.116
