@@ -24,15 +24,24 @@
     - name: print variable
       shell:
         cmd: |
-          echo "Noms : {{ $nom }}"
-          echo "Prenoms: {{ $prenom }}"
+          echo "Noms : {{ nom }}"
+          echo "Prenoms: {{ prenoms}}"
+      register: response
+    - name: display debug info
+      debug:
+        msg: "Response {{ response }}"
+
     - name: manage files
       file:
-        path: /home/alpha/ansible-alpha/file1
+        path: /home/alpha/Documents/ansible-alpha/file1
         state: touch
         owner: alpha
         group: alpha
         mode: 0777
-
+    - name: add line in file
+      lineinfile: 
+        path: /home/alpha/Documents/ansible-alpha/file1
+        regexp: "^Je"
+        line: "Je m'appelle {{ nom }} {{ prenoms }} " 
 
 
