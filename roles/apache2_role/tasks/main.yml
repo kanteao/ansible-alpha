@@ -1,0 +1,21 @@
+---
+# tasks file for apache2_role
+- name: install apache2
+  apt:
+    name: "{{ pack }}"
+    state: present
+  register: a2_check
+
+- name: start apache2
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+  when: a2_check.failed == False
+
+- name: check if apache installed
+  debug:
+    msg: echo "apache 2 installation is not {{ a2_check.failed }}"
+
+
+

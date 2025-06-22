@@ -1,0 +1,3 @@
+---
+# vars file for apache2_role
+pack: apache2

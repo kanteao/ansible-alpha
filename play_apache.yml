@@ -1,48 +1,10 @@
 ---
 - hosts: serv2
   become: yes
+  
+  roles:
+    - apache2_role
+    - file_role
 
-  tasks:
-    - name: install apache2
-      apt: 
-        name: apache2
-        state: present
-      register: a2_check
-
-    - name: start apache2
-      service:
-        name: apache2 
-        state: started 
-        enabled: yes
-
-- hosts: all
-  connection: local
-    #vars:
-    #nom: KANTE
-    #prenoms: ALPHA
-
-  tasks:
-    - name: print variable
-      shell:
-        cmd: |
-          echo "Noms : {{ nom }}"
-          echo "Prenoms: {{ prenoms}}"
-      register: response
-    - name: display debug info
-      debug:
-        msg: "Response {{ response }}"
-
-    - name: manage files
-      file:
-        path: /home/alpha/Documents/ansible-alpha/file1
-        state: touch
-        owner: alpha
-        group: alpha
-        mode: 0777
-    - name: add line in file
-      lineinfile: 
-        path: /home/alpha/Documents/ansible-alpha/file1
-        regexp: "^Je"
-        line: "Je m'appelle {{ nom }} {{ prenoms }} " 
 
 
