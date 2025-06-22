@@ -1,0 +1,164 @@
+    1  ls
+    2  ./autorun.sh 
+    3  ifconfig
+    4  ssh-keygen
+    5  cd
+    6  ll
+    7  cd .ssh
+    8  ll
+    9  cd 
+   10  cd .ansible/
+   11  ll
+   12  touch inventaire
+   13  vi inventaire
+   14  vi inventaire 
+   15  vim inventaire 
+   16  sudo apt install vim
+   17  vim inventaire 
+   18  cd
+   19  vi /etc/host
+   20  ifconfig
+   21  vi /etc/hosts
+   22  sudo vi /etc/hosts
+   23  ping serv1
+   24  ansible -i inventaire all -m ping 
+   25  cd 
+   26  cp .ansible/inventaire .
+   27  ansible -i inventaire all -m ping 
+   28  ansible -i inventaire serv1 -m ping 
+   29  ansible -i inventaire serv1 -m ping -v
+   30  vi inventaire 
+   31  ansible -i inventaire serv1 -m ping -v
+   32  telnet localhost 22
+   33  vi /etc/ssh/ssh_config
+   34  sudo vi /etc/ssh/ssh_config
+   35  sudo systemctl restart sshd
+   36  ll /etc/ssh/
+   37  exit
+   38  ifconfig
+   39  pwd
+   40  df
+   41  ls
+   42  mkdir jenkins
+   43  ls
+   44  pwd
+   45  curl -sO http://localhost:8080/jnlpJars/agent.jar
+   46  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   47  apt install curl
+   48  sudo apt install curl
+   49  curl
+   50  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   51  sudo apt install java
+   52  sudo apt install java*
+   53  sudo apt install default-jre
+   54  sudo apt-get update --fix-missing
+   55  dpkg -l | grep ubuntu-desktop
+   56  java -jar agent.jar -url http://localhost:8080/ -secret 3734597cf95f92979aaf897e89600c08da4d874f755f87fcb0bff93ca51d42f7 -name ubuntu1 -webSocket -workDir "/home/alpha/jenkins"
+   57  sudo apt install default-jre
+   58  ls
+   59  VBoxLinuxAdditions.run
+   60  ./VBoxLinuxAdditions.run
+   61  sudo ./VBoxLinuxAdditions.run
+   62  vi /etc/sudoers
+   63  sudo vi /etc/sudoers
+   64  sudo su
+   65  apt update
+   66  cd
+   67  cd ansible/
+   68  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   69  ansible-playbook -i inventory.yml -u alpha -K playbook1.yml 
+   70  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   71  sshpass
+   72  sudo apt install sshpass
+   73  ansible-playbook -i inventory.yml -u alpha -kK playbook1.yml 
+   74  cd 
+   75  git
+   76  git clone https://github.com/kanteao/ansible-alpha.git
+   77  cd ansible-alpha/
+   78  git status
+   79  ls
+   80  rm Servers 
+   81  git add .
+   82  git status
+   83  git commit -m "first ansible commit"
+   84  git config --global user.name "kanteao"
+   85  git config --global user.email "kanteao@gmail.com"
+   86  git commit -m "first ansible commit"
+   87  git push remote origin 
+   88  git push origin 
+   89  cd ..
+   90  rm ansible-alpha/
+   91  rm -r ansible-alpha/
+   92  ls -al
+   93  cd ..
+   94  ls
+   95  cd Documents/
+   96  git clone git@github.com:kanteao/ansible-alpha.git
+   97  git config user.nale
+   98  git config user.name
+   99  cd 
+  100  cd .ssh/
+  101  ll
+  102  cat id_rsa.pub 
+  103  cd 
+  104  cd Documents/
+  105  git clone git@github.com:kanteao/ansible-alpha.git
+  106  cd ansible-alpha/
+  107  cp /home/alpha/*yml .
+  108  ls
+  109  cp /home/alpha/inventaire .
+  110  mv inventaire inventory.yml
+  111  git add -A 
+  112  git status
+  113  ls
+  114  rm Servers 
+  115  ls
+  116  git status
+  117  git add .
+  118  git commit -m "my first playbook"
+  119  git push origin master
+  120  git push origin 
+  121  cd ..
+  122  ls
+  123  cd ..
+  124  ls
+  125  cd jenkins/
+  126  ls
+  127  cd ..
+  128  cd Documents/
+  129  cd ansible-alpha/
+  130  ls
+  131  vi inventory.yml 
+  132  ansible -i inventory.yml serv1 -m "ping"
+  133  ifconfig
+  134  ll
+  135  cat play_apache.yml 
+  136  vi roles/file_role/tasks/main.yml 
+  137  vi play_apache.yml 
+  138  ansible-playbook -i inventory.yml play_apache.yml -K 
+  139  ansible-playbook -i inventory.yml play_apache.yml --check
+  140  vi roles/apache2_role/tasks/main.yml 
+  141  ansible-playbook -i inventory.yml play_apache.yml --check
+  142  vi roles/apache2_role/tasks/main.yml 
+  143  ansible-playbook -i inventory.yml play_apache.yml --check
+  144  ansible-playbook -i inventory.yml play_apache.yml 
+  145  vi roles/apache2_role/tasks/main.yml 
+  146  ansible-playbook -i inventory.yml play_apache.yml 
+  147  vi roles/file_role/tasks/main.yml 
+  148  ansible-playbook -i inventory.yml play_apache.yml
+  149  ansible-playbook -i inventory.yml play_apache.yml -K
+  150  git status
+  151  git add .
+  152  git status
+  153  git push origin 
+  154  git commit -m "file role and apache2 role "
+  155  git push origin 
+  156  git status
+  157  git status --staged
+  158  git status -staged
+  159  git log 
+  160  git log --one-line
+  161  git log -h
+  162  git log --oneline
+  163  ls
+  164  history > commands.log
